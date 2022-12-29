@@ -1,0 +1,1064 @@
+<Applications>
+	<NotePadPlusPlus>
+		<Vendor>NotepadPlusPlus Team</Vendor>
+		<Product>NotepadPlusPlus</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name NotepadPlusPlus | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.exe" }</Evergreen>
+		<DisplayName>Notepad++</DisplayName>
+		<Description>Notepad++ is a text and source code editor for use with Microsoft Windows. It supports tabbed editing, which allows working with multiple open files in a single window. The project's name comes from the C increment operator. Notepad++ is distributed as free software.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\NotepadPlusPlus</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</NotePadPlusPlus>
+	<ShareX>
+		<Vendor>ShareX Team</Vendor>
+		<Product>ShareX</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name ShareX | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.exe" }</Evergreen>
+		<DisplayName>ShareX</DisplayName>
+		<Description>ShareX is a free and open-source screenshot and screencast utility for Microsoft Windows. It is published under the GNU General Public License. The project's source code is hosted at the GitHub code-sharing and code development platform.</Description>
+		<Installer>exe</Installer>
+		<Install>/Verysilent /Norun</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files\ShareX</Path>
+		<DetectionFile>ShareX.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</ShareX>
+	<mRemoteNG>
+		<Vendor>Next Generation Software</Vendor>
+		<Product>mRemoteNG</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name mRemoteNG | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.msi" }</Evergreen>
+		<DisplayName>mRemoteNG</DisplayName>
+		<Description>mRemoteNG is a fork of mRemote: an open source, tabbed, multi-protocol, remote connections manager for Windows. mRemoteNG adds bug fixes and new features to mRemote. It allows you to view all of your remote connections in a simple yet powerful tabbed interface.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files (x86)\mRemoteNG</Path>
+		<DetectionFile>mRemoteNG.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</mRemoteNG>
+	<WinSCP>
+		<Vendor>Martin Prikyl</Vendor>
+		<Product>WinSCP</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name WinSCP | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.exe" }</Evergreen>
+		<DisplayName>WinSCP</DisplayName>
+		<Description>WinSCP is a free and open-source SFTP, FTP, WebDAV, Amazon S3 and SCP client for Microsoft Windows. Its main function is secure file transfer between a local and a remote computer. Beyond this, WinSCP offers basic file manager and file synchronization functionality.</Description>
+		<Installer>exe</Installer>
+		<Install>/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files (x86)\WinSCP</Path>
+		<DetectionFile>WinSCP.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</WinSCP>
+	<FileZilla>
+		<Vendor>Tim Kosse</Vendor>
+		<Product>FileZilla</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name FileZilla</Evergreen>
+		<DisplayName>FileZilla FTP Client</DisplayName>
+		<Description>FileZilla is a free software, cross-platform FTP application, consisting of FileZilla Client and FileZilla Server. Client binaries are available for Windows, Linux, and macOS, server binaries are available for Windows only.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\FileZilla FTP Client</Path>
+		<DetectionFile>FileZilla.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</FileZilla>
+	<SevenZip>
+		<Vendor>7Zip</Vendor>
+		<Product>7Zip</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name 7zip | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.msi" }</Evergreen>
+		<DisplayName>7-Zip</DisplayName>
+		<Description>7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives". It is developed by Igor Pavlov and was first released in 1999. 7-Zip uses its own 7z archive format, but can read and write several other archive formats.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\7-Zip</Path>
+		<DetectionFile>7zG.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</SevenZip>
+	<TeamViewer>
+		<Vendor>TeamViewer</Vendor>
+		<Product>TeamViewer</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name TeamViewer</Evergreen>
+		<DisplayName>TeamViewer</DisplayName>
+		<Description>TeamViewer is a proprietary software application for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files (x86)\TeamViewer</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</TeamViewer>
+	<WinMerge>
+		<Vendor>Thingamahoochie Software</Vendor>
+		<Product>WinMerge</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name WinMerge | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*x64-Setup.exe" }</Evergreen>
+		<DisplayName>WinMerge</DisplayName>
+		<Description>WinMerge is a free software tool for data comparison and merging of text-like files. It is useful for determining what has changed between versions, and then merging changes between versions.</Description>
+		<Installer>exe</Installer>
+		<Install>/VERYSILENT /SP- /NORESTART</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files\WinMerge</Path>
+		<DetectionFile>WinMerge.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</WinMerge>
+	<VideoLanVlcPlayer>
+		<Vendor>VideoLAN</Vendor>
+		<Product>VLCPlayer</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name VideoLanVlcPlayer | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*.msi" }</Evergreen>
+		<DisplayName>VLC Player</DisplayName>
+		<Description>VLC media player is a free and open-source, portable, cross-platform media player software, and streaming media server developed by the VideoLAN project. VLC is available for desktop operating systems, and mobile platforms, such as Android, iOS, iPadOS, Tizen, Windows 10 Mobile, and Windows Phone.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files (x86)\VLCPlayer</Path>
+		<DetectionFile>VLCPlayer.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</VideoLanVlcPlayer>
+	<GreenShot>
+		<Vendor>GreenShot</Vendor>
+		<Product>GreenShot</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name GreenShot | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*RELEASE.exe" }</Evergreen>
+		<DisplayName>GreenShot</DisplayName>
+		<Description>Greenshot is a free and open-source screenshot program for Microsoft Windows. It is developed by Thomas Braun, Jens Klingen and Robin Krom and is published under GNU General Public License, hosted by GitHub. Greenshot is also available for macOS, but as proprietary software through the App Store.</Description>
+		<Installer>exe</Installer>
+		<Install>/VERYSILENT /SUPPRESSMESSAGEBOXES /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS /NORESTART</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files\Greenshot</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</GreenShot>
+	<Cyberduck>
+		<Vendor>iterate GmbH</Vendor>
+		<Product>Cyberduck</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name Cyberduck | Where-Object { $_.Channel -eq "Release" }</Evergreen>
+		<DisplayName>Cyberduck</DisplayName>
+		<Description>Cyberduck is an open-source client for FTP and SFTP, WebDAV, and cloud storage, available for macOS and Windows licensed under the GPL. Cyberduck is written in Java and C# using the Cocoa user interface framework on macOS and Windows Forms on Windows.</Description>
+		<Installer>exe</Installer>
+		<Install>/quiet</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Cyberduck</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Cyberduck>
+	<Handbrake>
+		<Vendor>Handbrake</Vendor>
+		<Product>Handbrake</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name Handbrake | Where-Object { $_.Architecture -eq "$Architecture" -and $_.URI -like "*Win_GUI.exe" }</Evergreen>
+		<DisplayName>Handbrake</DisplayName>
+		<Description>HandBrake is a free and open-source transcoder for digital video files, originally developed in 2003 by Eric Petit to make ripping a film from a DVD to a data storage device easier.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninst.exe</Uninstall>
+		<Path>C:\Program Files\Handbrake</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Handbrake>
+	<TreeSizeFree>
+		<Vendor>JAM Software</Vendor>
+		<Product>TreeSizeFree</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name JamTreeSizeFree</Evergreen>
+		<DisplayName>TreeSize Free</DisplayName>
+		<Description>TreeSize is a disk space analyzer written by JAM Software. TreeSize has native 32 and 64-bit support for all Windows versions and client/server versions currently supported by Microsoft.</Description>
+		<Installer>exe</Installer>
+		<Install>/verysilent</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files (x86)\JAM Software\TreeSize Free</Path>
+		<DetectionFile>TreeSizeFree.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</TreeSizeFree>
+	<MozillaFirefox>
+		<Vendor>Mozilla</Vendor>
+		<Product>Firefox</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name MozillaFirefox | Where-Object { $_.Architecture -eq "x64" -and $_.Channel -eq "LATEST_FIREFOX_VERSION" -and $_.Language -eq "en-US" -and $_.Type -eq "exe" } | Select-Object -First 1</Evergreen>
+		<DisplayName>Mozilla Firefox</DisplayName>
+		<Description>Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/X</Uninstall>
+		<Path>C:\Program Files\Mozilla Firefox</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</MozillaFirefox>
+	<CCleaner>
+		<Vendor>Piriform</Vendor>
+		<Product>CCleaner</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>CCleaner</DisplayName>
+		<Description>CCleaner, developed by Piriform, is a utility used to clean potentially unwanted files and invalid Windows Registry entries from a computer. It is one of the longest-established system cleaners, first launched in 2004. It was originally developed for Microsoft Windows only, but in 2012, a macOS version was released.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninst.exe</Uninstall>
+		<Path>C:\Program Files\CCleaner</Path>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</CCleaner>
+	<PaintNET>
+		<Vendor>dotPDN LLC</Vendor>
+		<Product>Paint</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Paint.NET</DisplayName>
+		<Description>Paint.net is a freeware raster graphics editor program for Microsoft Windows, developed on the .NET Framework.</Description>
+		<Installer>exe</Installer>
+		<Install>/auto</Install>
+		<Uninstall>paintdotnet.exe</Uninstall>
+		<Path>C:\Program Files\paint.net</Path>
+		<DetectionFile>paintdotnet.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</PaintNET>
+	<Gimp>
+		<Vendor>The Gimp Team</Vendor>
+		<Product>Gimp</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name Gimp</Evergreen>
+		<DisplayName>Gimp</DisplayName>
+		<Description>GIMP is a free and open-source raster graphics editor used for image manipulation and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. GIMP is released under GPLv3+ license and is available for Linux, macOS, and Microsoft Windows.</Description>
+		<Installer>exe</Installer>
+		<Install>/VERYSILENT /NORESTART /RESTARTEXITCODE=3010 /SUPPRESSMSGBOXES /SP-</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files\GIMP 2</Path>
+		<Enabled>False</Enabled>
+		<PMPC>False</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Gimp>
+	<MP3Tag>
+		<Vendor>Florian Heidenreich</Vendor>
+		<Product>MP3Tag</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>MP3Tag</DisplayName>
+		<Description>Mp3tag is a freeware metadata editor for many audio file formats for Microsoft Windows and Apple macOS.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>Mp3tagUninstall.exe</Uninstall>
+		<Path>C:\Program Files (x86)\Mp3tag</Path>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</MP3Tag>
+	<PuTTY>
+		<Vendor>Simon Tatham</Vendor>
+		<Product>PuTTY</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>PuTTY</DisplayName>
+		<Description>PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port. The name "PuTTY" has no official meaning.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/X</Uninstall>
+		<Path>C:\Program Files (x86)\PuTTY</Path>
+		<DetectionFile>Putty.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</PuTTY>
+	<Wireshark>
+		<Vendor>Wireshark Team</Vendor>
+		<Product>WireShark</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Wireshark</DisplayName>
+		<Description>Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues.</Description>
+		<Installer>exe</Installer>
+		<Install>/S /quicklaunchicon=no</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files (x86)\Wireshark</Path>
+		<DetectionFile>Wireshark.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Wireshark>
+	<Fiddler>
+		<Vendor>Progress Software Corporation</Vendor>
+		<Product>Fiddler</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Fiddler</DisplayName>
+		<Description>Fiddler is a debugging proxy server tool used to log, inspect, and alter HTTP and HTTPS traffic between a computer and a web server or servers. Fiddler was originally written by Eric Lawrence while a Program Manager on the Internet Explorer development team at Microsoft.</Description>
+		<Installer>exe</Installer>
+		<Install>/S /D=C:\Program Files\Fiddler</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\Fiddler</Path>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Fiddler>
+	<AngryIPScanner>
+		<Vendor>Anton Keks</Vendor>
+		<Product>AngryIPScanner</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>AngryIPScanner</DisplayName>
+		<Description>Angry IP scanner is a very fast IP address and port scanner. It can scan IP addresses in any range as well as any their ports. It is cross-platform and lightweight. Not requiring any installations, it can be freely copied and used anywhere.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\AngryIPScanner</Path>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</AngryIPScanner>
+	<SumatraPDF>
+		<Vendor>Krzysztof Kowalczyk</Vendor>
+		<Product>SumatraPDF</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name SumatraPDFReader| Where-Object { $_.Architecture -eq "$Architecture" }</Evergreen>
+		<DisplayName>SumatraPDF</DisplayName>
+		<Description>Sumatra PDF is a free and open-source document viewer that supports many document formats including: Portable Document Format, Microsoft Compiled HTML Help, DjVu, EPUB, FictionBook, MOBI, PRC, Open XML Paper Specification, and Comic Book Archive file. If Ghostscript is installed, it supports PostScript files.</Description>
+		<Installer>exe</Installer>
+		<Install>-install -d "C:\Program Files\SumatraPDF" -s</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\SumatraPDF</Path>
+		<Enabled>False</Enabled>
+		<WinGet>False</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</SumatraPDF>
+	<Telegram>
+		<Vendor>Telegram FZ-LLC</Vendor>
+		<Product>Telegram</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name TelegramDesktop</Evergreen>
+		<DisplayName>Telegram</DisplayName>
+		<Description>Telegram is a freeware, cross-platform, cloud-based instant messaging, video calling, and VoIP service. It was initially launched for iOS on 14 August 2013 and Android in October 2013. The app servers are spread worldwide, wihle development is currently based in Dubai.</Description>
+		<Installer>exe</Installer>
+		<Install>/Verysilent</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\Telegram</Path>
+		<Enabled>False</Enabled>
+		<PMPC>False</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Telegram>
+	<FoxitReader>
+		<Vendor>Foxit Software</Vendor>
+		<Product>FoxitReader</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name FoxitReader | Where-Object { $_.Language -eq "English" }</Evergreen>
+		<DisplayName>Foxit Reader</DisplayName>
+		<Description>Foxit Reader is a multilingual freemium PDF tool that can create, view, edit, digitally sign, and print PDF files.</Description>
+		<Installer>exe</Installer>
+		<Install>/verysilent</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Foxit Reader</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</FoxitReader>
+	<Chrome>
+		<Vendor>Google</Vendor>
+		<Product>Chrome</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name GoogleChrome | Where-Object { $_.Architecture -eq "$Architecture" }</Evergreen>
+		<DisplayName>Google Chrome</DisplayName>
+		<Description>Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, and was later ported to Linux, macOS, iOS, and Android where it is the default browser built into the OS.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 NOGOOGLEUPDATEPING=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Google\Chrome\Application</Path>
+		<DetectionFile>Chrome.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Chrome>
+	<BeyondCompare>
+		<Vendor>Scooter Software</Vendor>
+		<Product>Beyond Compare</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name ScooterBeyondCompare</Evergreen>
+		<DisplayName>Beyond Compare</DisplayName>
+		<Description>Beyond Compare is a data comparison utility. Aside from comparing files, the program is capable of doing side-by-side comparison of directories, FTP and SFTP directories, Dropbox directories, Amazon S3 directories, and archives. It is available for Windows, Mac OS, and Linux operating systems.</Description>
+		<Installer>exe</Installer>
+		<Install>/SP- /VERYSILENT /NORESTART</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Beyond Compare 4</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</BeyondCompare>
+	<LibreCAD>
+		<Vendor>LibreCAD</Vendor>
+		<Product>LibreCAD</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-GitHubRelease -Uri https://api.github.com/repos/LibreCAD/LibreCAD/releases/latest</Evergreen>
+		<DisplayName>LibreCAD</DisplayName>
+		<Description>LibreCAD is a free computer-aided design application for 2D design. It works on Linux, macOS, Unix and Windows operating systems. LibreCAD was developed as a fork of QCAD Community Edition. The GUI of LibreCAD is based on Qt5 libraries, so it runs on several platforms in the same way.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files (x86)\LibreCAD</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</LibreCAD>
+	<PDFSam>
+		<Vendor>Andrea Vacondio</Vendor>
+		<Product>PDFSam</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-GitHubRelease -uri https://api.github.com/repos/torakiki/pdfsam/releases/latest | Where-Object { $_.URI -like "*.msi" }</Evergreen>
+		<DisplayName>PDFsam Basic</DisplayName>
+		<Description>PDFsam Basic or PDF Split and Merge is a free and open-source cross-platform desktop application to split, merge, extract pages, rotate and mix PDF documents.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\PDFSam Basic</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</PDFSam>
+	<LibreOffice>
+		<Vendor>The Document Foundation</Vendor>
+		<Product>LibreOffice</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name LibreOffice | Where-Object { $_.Architecture -eq "x86_64" -and  $_.Language -eq "Neutral" }</Evergreen>
+		<DisplayName>LibreOffice</DisplayName>
+		<Description>LibreOffice is a free and open-source office suite, a project of The Document Foundation. It was forked in 2010 from OpenOffice.org, which was an open-sourced version of the earlier StarOffice.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn ADDLOCAL=ALL CREATEDESKTOPLINKE=0 REGISTER_ALL_SMO_TYPES=1 REMOVE=gm_o_Onlineupdate RebootYesNo=No</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files (x86)\LibreOffice</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</LibreOffice>
+	<AcrobatReaderDC>
+		<Vendor>Adobe Systems</Vendor>
+		<Product>AcrobatReaderDC</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name AdobeAcrobatReaderDC | Where-Object { $_.Architecture -eq "x64" -and $_.Language -eq "English" }</Evergreen>
+		<DisplayName>Acrobat Reader DC</DisplayName>
+		<Description>Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content – including forms and multimedia.</Description>
+		<Installer>exe</Installer>
+		<Install>-sfx_nu /sALL /msi EULA_ACCEPT=YES ENABLE_CHROMEEXT=0 DISABLE_BROWSER_INTEGRATION=1 ENABLE_OPTIMIZATION=YES ADD_THUMBNAILPREVIEW=0 DISABLEDESKTOPSHORTCUT=1 UPDATE_MODE=0 DISABLE_ARM_SERVICE_INSTALL=1</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</AcrobatReaderDC>
+	<ProjectLibre>
+		<Vendor>ProjectLibre</Vendor>
+		<Product>ProjectLibre</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name ProjectLibre | Where-Object { $_.URI -like "*.exe" }</Evergreen>
+		<DisplayName>ProjectLibre</DisplayName>
+		<Description>ProjectLibre is a project management software company with both a free open-source desktop and an upcoming Cloud version. ProjectLibre desktop is a free and open-source project management software system intended ultimately as a standalone replacement for Microsoft Project.</Description>
+		<Installer>exe</Installer>
+		<Install>/VERYSILENT /NORESTART</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\ProjectLibre</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</ProjectLibre>
+	<VNCViewer>
+		<Vendor>RealVNC</Vendor>
+		<Product>VNCViewer</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>VNCViewer</DisplayName>
+		<Description>RealVNC is a company that provides remote access software. The software consists of a server (VNC Server) and client (VNC Viewer) application for the Virtual Network Computing (VNC) protocol to control another computer's screen remotely.</Description>
+		<Installer>exe</Installer>
+		<Install>/verysilent /norestart</Install>
+		<Uninstall>uninstall.exe</Uninstall>
+		<Path>C:\Program Files\VNCViewer</Path>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</VNCViewer>
+	<Brave>
+		<Vendor>Brave Software</Vendor>
+		<Product>Brave</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-GitHubRelease -uri https://api.github.com/repos/brave/brave-browser/releases/latest | Where-Object { $_.URI -like "*BraveBrowserStandaloneNightlySetup.exe" }</Evergreen>
+		<DisplayName>Brave Nightly</DisplayName>
+		<Description>Brave is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser. It blocks ads and website trackers, and provides a way for users to send cryptocurrency contributions in the form of Basic Attention Tokens to websites and content creators.</Description>
+		<Installer>exe</Installer>
+		<Install></Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files (x86)\BraveSoftware</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Brave>
+	<Opera>
+		<Vendor>Opera Software</Vendor>
+		<Product>Opera</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Opera</DisplayName>
+		<Description>Opera is a multi-platform web browser developed by Opera Software. Opera is a Chromium-based browser. Opera was initially released in April 1995, making it one of the oldest desktop web browsers still actively developed today.</Description>
+		<Installer>exe</Installer>
+		<Install>/install /silent /NoTaskbarShortcut /launchopera=0 /setdefaultbrowser=0 /allusers=1</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files (x86)\Opera</Path>
+		<Enabled>False</Enabled>
+		<PMPC>True</PMPC>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Opera>
+	<Thunderbird>
+		<Vendor>Mozilla</Vendor>
+		<Product>Thunderbird</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name MozillaThunderbird | Where-Object { $_.Architecture -eq "x64" -and $_.Language -eq "en-US" -and $_.URI -like "*.msi" }</Evergreen>
+		<DisplayName>Thunderbird</DisplayName>
+		<Description>Mozilla Thunderbird is a free and open-source cross-platform email client, personal information manager, news client, RSS and chat client developed by the Mozilla Foundation. The project strategy was originally modeled after that of the Mozilla Firefox web browser.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Thunderbird</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Thunderbird>
+	<OpenOffice>
+		<Vendor>Apache</Vendor>
+		<Product>OpenOffice</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>OpenOffice</DisplayName>
+		<Description>Apache OpenOffice is an open-source office productivity software suite. It is one of the successor projects of OpenOffice.org and the designated successor of IBM Lotus Symphony. It is a close cousin of LibreOffice and NeoOffice.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>fake_uninstall.exe</Uninstall>
+		<Path>C:\Program Files (x86)\OpenOffice 4</Path>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</OpenOffice>
+	<Audacity>
+		<Vendor>Anton Keks</Vendor>
+		<Product>Audacity</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Audacity</DisplayName>
+		<Description>Audacity is a free and open-source digital audio editor and recording application software, available for Windows, macOS, Linux, and other Unix-like operating systems.</Description>
+		<Installer>exe</Installer>
+		<Install>/verysilent</Install>
+		<Uninstall>unins000.exe</Uninstall>
+		<Path>C:\Program Files\Audacity</Path>
+		<DetectionFile>Audacity.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Audacity>
+	<RemoteDesktopManagerFree>
+		<Vendor>Devolutions</Vendor>
+		<Product>RemoteDesktopManagerFree</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Remote Desktop Manager Free</DisplayName>
+		<Description>Remote Desktop Manager is an application that integrates a comprehensive set of tools and managers to meet the needs of any IT team. It is designed to centralize remote connection technologies, credentials, and secure the access to these resources.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files (x86)\Devolutions\Remote Desktop Manager Free</Path>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</RemoteDesktopManagerFree>
+	<Fusion360>
+		<Vendor>AutoDesk</Vendor>
+		<Product>Fusion 360</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Fusion 360</DisplayName>
+		<Description>Fusion 360 is a cloud-based CAD/CAM tool for collaborative product development. Fusion 360 enables exploration and iteration on product ideas and collaboration within distributed product development team. Fusion 360 combines organic shapes modelling, mechanical design and manufacturing in one comprehensive package.</Description>
+		<Installer>exe</Installer>
+		<Install>--quiet</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Autodesk</Path>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Fusion360>
+	<Bitwarden>
+		<Vendor>Bitwarden</Vendor>
+		<Product>Bitwarden</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen>Get-EvergreenApp -Name BitwardenDesktop | Where-Object { $_.URI -like "*Bitwarden-Installer*.*" }</Evergreen>
+		<DisplayName>Bitwarden</DisplayName>
+		<Description>Bitwarden is a free and open-source password management service that stores sensitive information such as website credentials in an encrypted vault. The Bitwarden platform offers a variety of client applications including a web interface, desktop applications, browser extensions, mobile apps, and a CLI.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Bitwarden</Path>
+		<Enabled>False</Enabled>
+		<WinGet>False</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Bitwarden>
+	<PowerBI>
+		<Vendor>Microsoft</Vendor>
+		<Product>PowerBI</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>PowerBI Desktop</DisplayName>
+		<Description>Power BI is a business analytics service by Microsoft. It aims to provide interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.</Description>
+		<Installer>exe</Installer>
+		<Install>-silent -norestart ACCEPT_EULA=1</Install>
+		<Uninstall>PBIDesktop.exe</Uninstall>
+		<Path>C:\Program Files\Microsoft Power BI Desktop\bin</Path>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</PowerBI>
+	<Signal>
+		<Vendor>Open Whisper Systems</Vendor>
+		<Product>Signal</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Signal</DisplayName>
+		<Description>Signal is a cross-platform encrypted messaging service developed by the Signal Foundation and Signal Messenger. It uses the Internet to send one-to-one and group messages, which can include files, voice notes, images and videos.</Description>
+		<Installer>exe</Installer>
+		<Install>/S /D="C:\Program Files (x86)\Signal"</Install>
+		<Uninstall>Uninstall Signal.exe</Uninstall>
+		<Path>C:\Program Files (x86)\Signal</Path>
+		<DetectionFile>Signal.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Signal>
+	<WinAMP>
+		<Vendor>Nullsoft</Vendor>
+		<Product>WinAMP</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>WinAMP</DisplayName>
+		<Description>Winamp is a media player for Microsoft Windows originally developed by Justin Frankel and Dmitry Boldyrev by their company Nullsoft, which they later sold to AOL in 1999 for $80 million.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>UninstWA.exe</Uninstall>
+		<Path>C:\Program Files (x86)\WinAMP</Path>
+		<DetectionFile>WinAmp.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</WinAMP>
+	<MicrosoftWvdRemoteDesktop>
+		<Vendor>Microsoft</Vendor>
+		<Product>WvD Remote Desktop</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name MicrosoftWvdRemoteDesktop | Where-Object { $_.Architecture -eq "$Architecture" }</Evergreen>
+		<DisplayName>Microsoft WvD Remote Desktop</DisplayName>
+		<Description>You can use the Remote Desktop client for Windows Desktop to access Windows apps and desktops remotely from a different Windows device.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Remote Desktop</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</MicrosoftWvdRemoteDesktop>
+	<Bitbucket>
+		<Vendor>Atlassian</Vendor>
+		<Product>Bitbucket</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name AtlassianBitbucket | Where-Object { $_.Type -eq "MSI" }</Evergreen>
+		<DisplayName>Atlassian Bitbucket</DisplayName>
+		<Description>Bitbucket is a Git-based source code repository hosting service owned by Atlassian. Bitbucket offers both commercial plans and free accounts with an unlimited number of private repositories.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\Remote Desktop</Path>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</Bitbucket>
+	<WinDirStat>
+		<Vendor>The WinDirStat Team</Vendor>
+		<Product>WinDirStat</Product>
+		<Architecture>x86</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>WinDirStat</DisplayName>
+		<Description>WinDirStat is a free and open-source graphical disk usage analyzer for Microsoft Windows. It is notable for presenting a sub-tree view with disk use percentage alongside a usage-sorted list of file extensions that is interactively integrated with a colorful graphical display.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>fake_uninstall.exe</Uninstall>
+		<Path>C:\Program Files (x86)\WinAMP</Path>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</WinDirStat>
+	<ImageGlass>
+		<Vendor>ImageGlass</Vendor>
+		<Product>ImageGlass</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen>Get-EvergreenApp -Name ImageGlass | Where-Object { $_.Architecture -eq "$Architecture" }</Evergreen>
+		<DisplayName>ImageGlass</DisplayName>
+		<Description>ImageGlass is open source, free, ad-free photo viewer.</Description>
+		<Installer>msi</Installer>
+		<Install>/i ALLUSERS=1 /qn</Install>
+		<Uninstall>/x</Uninstall>
+		<Path>C:\Program Files\ImageGlass</Path>
+		<DetectionFile>ImageGlass.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</ImageGlass>
+	<RASClient>
+		<Vendor>Parallels</Vendor>
+		<Product>RAS Client</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<Version>18.3.22893</Version>
+		<URL>http://download.parallels.com/ras/latest/RASClient-x64.msi</URL>
+		<DisplayName>Parallels Client</DisplayName>
+		<Description>Parallels Client is a lightweight software that enables end-users to securely access virtual applications and desktops from Windows, Mac, Linux, iOS/iPadOS, Android, Google Chromebook and any HTML5 web browser.</Description>
+		<Installer>msi</Installer>
+		<Install></Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Parallels\Client</Path>
+		<DetectionFile>TSClient.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Private>True</Private>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</RASClient>
+	<BloombergTerminal>
+		<Vendor>Bloomberg</Vendor>
+		<Product>Terminal</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<Version>3080.1.80.1</Version>
+		<URL>https://bdn-ak-ssl.bloomberg.com/software/trv/sotr80_12_80.exe</URL>
+		<DisplayName>Bloomberg Terminal</DisplayName>
+		<Description>Note: Please close Word and Outlook before installing this application. The Bloomberg Terminal is a computer software system provided by the financial data vendor Bloomberg L.P. that enables professionals in the financial service sector and other industries to access Bloomberg Professional Services through which users can monitor and analyze real-time financial market data and place trades on the electronic trading platform.</Description>
+		<Installer>exe</Installer>
+		<Install>/s maindir="C:\Program Files\blp"</Install>
+		<Uninstall>C:\ProgramData\{B53F404A-773B-45E2-88B4-64C99180D7BC}\sotrt.exe REMOVE=TRUE</Uninstall>
+		<Path>C:\Program Files\blp\Wintrv</Path>
+		<DetectionFile>wintrv.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Private>True</Private>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</BloombergTerminal>
+	<PipeFitter>
+		<Vendor>Templagenics LLC</Vendor>
+		<Product>Digital Pipe Fitter</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<Version>1.9.2.0</Version>
+		<URL>http://xenapptraining.s3.amazonaws.com/Repo/Digital_Pipe_Fitter_1_92.msi</URL>
+		<DisplayName>Digital Pipe Fitter</DisplayName>
+		<Description>This software lets you print to any printer or export to an AutoCAD DXF file. Choose the type of joint you want, enter pipe sizes and desired dimensions, print a template on your printer, wrap the template around the pipe, and cut on the line. Digital Pipe Fitter even includes node joints for use in truss structures.</Description>
+		<Installer>msi</Installer>
+		<Install></Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files (x86)\Digital Pipe Fitter</Path>
+		<DetectionFile>dpipefit.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Private>True</Private>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</PipeFitter>
+	<CloudBerryExplorer>
+		<Vendor>CloudBerryLab</Vendor>
+		<Product>CloudBerry Explorer</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<Version>6.2.1</Version>
+		<URL>http://xenapptraining.s3.amazonaws.com/Repo/CBESetup.exe</URL>
+		<DisplayName>CloudBerry Explorer</DisplayName>
+		<Description>CloudBerry Explorer provides a user interface allowing to access, move and manage files across your local storage and the cloud storage of your choice. Cloud file management software by MSP360 is available in two versions: Freeware and PRO.</Description>
+		<Installer>exe</Installer>
+		<Install>/S</Install>
+		<Uninstall>C:\Program Files\CloudBerryLab\CloudBerry Explorer\uninst.exe</Uninstall>
+		<Path>C:\Program Files\CloudBerryLab\CloudBerry Explorer</Path>
+		<DetectionFile>CloudBerry Explorer.exe</DetectionFile>
+		<Enabled>True</Enabled>
+		<Private>True</Private>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</CloudBerryExplorer>
+	<StreamDeck>
+		<Vendor>Elgato Systems GmbH</Vendor>
+		<Product>StreamDeck</Product>
+		<Architecture>x64</Architecture>
+		<Evergreen></Evergreen>
+		<DisplayName>Stream Deck</DisplayName>
+		<Description>The Elgato Stream Deck is a customizable control pad for live-streaming that includes 15 LCD keys for switching scenes, launching media, and adjusting audio on the fly. You can trigger self-promotional tweets, chat commands, and a bunch of things you'd usually have to Alt-Tab to do.</Description>
+		<Installer>msi</Installer>
+		<Install></Install>
+		<Uninstall></Uninstall>
+		<Path>C:\Program Files\Elgato\StreamDeck</Path>
+		<DetectionFile>StreamDeck.exe</DetectionFile>
+		<Enabled>False</Enabled>
+		<WinGet>True</WinGet>
+		<Categories>IT Admin Tools</Categories>
+		<Assignments Customer="xenappblog">
+			<Group>All Users</Group>
+			<RequiredGroup>All Devices</RequiredGroup>
+			<PilotGroup>Intune IT Pilot</PilotGroup>
+		</Assignments>
+	</StreamDeck>
+</Applications>
